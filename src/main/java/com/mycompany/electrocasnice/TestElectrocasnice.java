@@ -2,7 +2,7 @@ package com.mycompany.electrocasnice;
 
 //import java.lang.String;
 import java.util.Scanner;
-
+//alinuca
 public class TestElectrocasnice {
 
     public static void main(String[] args) {
