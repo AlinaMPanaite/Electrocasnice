@@ -25,7 +25,7 @@ public class Frigider extends Electrocasnice {
         nivelZgomot = 0;
     }
 
-    Frigider(String clasaFrigider, String sistemDeRacire, int numarCompresoare, String controlTemperatura, int nrRafturi, boolean dozatorApa, boolean cutieFructesiLegume, int nivelZgomot, String brand, String tip, String clasaEficientaEnergetic, String numeModel, String culoare, String functii, float capacitate, int recenziiTotal, float pret, float recenzii, String dimensiune, float greutate, int garantiePersoaneJuridice, int garantiePersoaneFizice) {
+    Frigider(String clasaFrigider, boolean hasfreezer, String sistemDeRacire, int numarCompresoare, String controlTemperatura, int nrRafturi, boolean dozatorApa, boolean cutieFructesiLegume, int nivelZgomot, String brand, String tip, String clasaEficientaEnergetic, String numeModel, String culoare, String functii, float capacitate, int recenziiTotal, float pret, float recenzii, String dimensiune, float greutate, int garantiePersoaneJuridice, int garantiePersoaneFizice) {
     super(tip, brand, numeModel, functii, capacitate, clasaEficientaEnergetic, pret, greutate, dimensiune, culoare, recenzii, recenziiTotal, garantiePersoaneJuridice, garantiePersoaneFizice);
         this.clasaFrigider = clasaFrigider;
         this.hasFreezer = hasFreezer;
