@@ -12,14 +12,14 @@ public class MasinaDeSpalatRufe extends Electrocasnice {
     char clasaEficientaStoarcere;
     char clasaEmisieZgomot;
     int numarPrograme;
-    int  programRapid;
+    int programRapid;
     String programeSpalare;
     String functiiPrespalare;
     int consumEnergie;
     int consumApa;
     String durataProgramEco;
     int putere;
-    
+
     MasinaDeSpalatRufe() {
         super();
         vitezaCentrifugare = 0;
@@ -30,16 +30,15 @@ public class MasinaDeSpalatRufe extends Electrocasnice {
         numarPrograme = 0;
         programRapid = 0;
         programeSpalare = " ";
-        functiiPrespalare = " " ;
+        functiiPrespalare = " ";
         consumEnergie = 0;
         consumApa = 0;
-        durataProgramEco= " ";
+        durataProgramEco = " ";
         putere = 0;
 
     }
 
-    MasinaDeSpalatRufe(String tip, String brand, String numeModel, String functii, float capacitate, int vitezaCentrifugare, String clasaEficientaEnergetica, float pret, float greutate, String dimensiune, String culoare, String afisaj, char clasaEficientaSpalare, char clasaEficientaStoarcere, int numarPrograme, int programRapid, String programeSpalare, String functiiPrespalare, int consumEnergie, int consumApa, String durataProgramEco, char clasaEmisieZgomot, int putere, float recenzii, int recenziiTotal, int garantiePersoaneJuridice, int garantiePersoaneFizice) {
-// super = apel către constructorul clasei părinte (constructorul superclasei)    
+    MasinaDeSpalatRufe(String tip, String brand, String numeModel, String functii, float capacitate, int vitezaCentrifugare, String clasaEficientaEnergetica, float pret, float greutate, String dimensiune, String culoare, String afisaj, char clasaEficientaSpalare, char clasaEficientaStoarcere, int numarPrograme, int programRapid, String programeSpalare, String functiiPrespalare, int consumEnergie, int consumApa, String durataProgramEco, char clasaEmisieZgomot, int putere, float recenzii, int recenziiTotal, int garantiePersoaneJuridice, int garantiePersoaneFizice) { 
         super(tip, brand, numeModel, functii, capacitate, clasaEficientaEnergetica, pret, greutate, dimensiune, culoare, recenzii, recenziiTotal, garantiePersoaneJuridice, garantiePersoaneFizice);
         this.vitezaCentrifugare = vitezaCentrifugare;
         this.afisaj = afisaj;
@@ -58,7 +57,6 @@ public class MasinaDeSpalatRufe extends Electrocasnice {
     }
 
     public MasinaDeSpalatRufe(MasinaDeSpalatRufe copie) {
-        // Constructorul de copiere
         super(copie);
         this.vitezaCentrifugare = copie.vitezaCentrifugare;
         this.afisaj = copie.afisaj;
@@ -75,7 +73,7 @@ public class MasinaDeSpalatRufe extends Electrocasnice {
         this.putere = copie.putere;
 
     }
-        
+
     @Override
     public String toString() {
         return super.toString() + "\n  Tip: " + tip + "\n  Capacitate spalare(kg): " + capacitate + "\n  Viteza centrifugare(rpm): " + vitezaCentrifugare + "\n  Clasa eficienta energetica: " + clasaEficientaEnergetica + "\n  Afisaj/Panou comanda: " + afisaj + "\n  Clasa eficienta spalare: " + clasaEficientaSpalare + "\n  Clasa eficienta la stoarcere: " + clasaEficientaStoarcere + "\n  Numar programe spalare: " + numarPrograme + "\n  Program rapid(min): " + programRapid + "\n  Programe spalare: " + programeSpalare + "\n  Functii prespalare: " + functiiPrespalare + "\n  Functii: " + functii + "\n\n  Caracteristici tehnice\n  Putere(W): " + putere + "\n  Consum energie(kWh/100 cicluri): " + consumEnergie + "\n  Consum de apa(l/ciclu): " + consumApa + "\n  Durata program Eco 40-60 (h:min): " + durataProgramEco + "\n  Clasa emisie zgomot: " + clasaEmisieZgomot + "\n\n  Garantie\n  Garantie comerciala persoane juridice: " + garantiePersoaneJuridice + " luni\n  Garantie de conformitate persoane fizice: " + garantiePersoaneFizice + " luni";
