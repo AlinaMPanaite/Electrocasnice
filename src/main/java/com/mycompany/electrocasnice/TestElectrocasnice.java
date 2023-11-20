@@ -143,13 +143,13 @@ public class TestElectrocasnice {
 //        System.out.println("\nCopie f4\n"+f0);
         //facem un vector "vectAragaze" in care o sa punem instantele
         // dupa facem un vector aragazeArray cu toate instantele ca sa pot face un for; altfel ar fi trebuit sa fac vectAragaze[0]=a1; vectAragaze[1]=a2;... de 10 ori!!!!!! 
-        Aragaz[] vectAragaze = new Aragaz[10];
+        Aragaz[] vectAragaze = new Aragaz[15];
         Aragaz[] aragazeArray = {a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15};
         for (int i1 = 0; i1 < vectAragaze.length && i1 < aragazeArray.length; i1++) {
             vectAragaze[i1] = aragazeArray[i1];
         }
 
-        Cuptor[] vectCuptoare = new Cuptor[10];
+        Cuptor[] vectCuptoare = new Cuptor[15];
         Cuptor[] cuptoareArray = {c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15};
         for (int i2 = 0; i2 < vectCuptoare.length && i2 < cuptoareArray.length; i2++) {
             vectCuptoare[i2] = cuptoareArray[i2];
@@ -165,13 +165,13 @@ public class TestElectrocasnice {
         for (int i4 = 0; i4 < vectMasinaDeSpalatVase.length && i4 < MasinaDeSpalatVase2Array.length; i4++) {
             vectMasinaDeSpalatVase[i4] = MasinaDeSpalatVase2Array[i4];
         }
-        Congelator[] vectCongelatoare = new Congelator[10];
+        Congelator[] vectCongelatoare = new Congelator[15];
         Congelator[] congelatoareArray = {cg1, cg2, cg3, cg4, cg5, cg6, cg7, cg8, cg9, cg10, cg11, cg12, cg13, cg14, cg15};
         for (int i5 = 0; i5 < vectCongelatoare.length && i5 < congelatoareArray.length; i5++) {
             vectCongelatoare[i5] = congelatoareArray[i5];
         }
 
-        Frigider[] vectFrigidere = new Frigider[10];
+        Frigider[] vectFrigidere = new Frigider[15];
         Frigider[] frigidereArray = {f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15};
         for (int i6 = 0; i6 < vectFrigidere.length && i6 < frigidereArray.length; i6++) {
             vectFrigidere[i6] = frigidereArray[i6];
