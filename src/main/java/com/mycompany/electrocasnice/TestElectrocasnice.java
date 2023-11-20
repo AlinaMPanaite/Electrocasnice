@@ -1,7 +1,7 @@
-package com.mycompany.electrocasnice;
+package electrocasnice;
 
+//import java.lang.String;
 import java.util.Scanner;
-
 public class TestElectrocasnice {
 
     public static void main(String[] args) {
@@ -14,8 +14,8 @@ public class TestElectrocasnice {
         Cuptor c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15;
         MasinaDeSpalatRufe r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15;
         MasinaDeSpalatVase v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;
-        Congelator cg0, cg1, cg2, cg3, cg4, cg5, cg6, cg7, cg8, cg9, cg10;
-        Frigider f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10;
+        Congelator cg0, cg1, cg2, cg3, cg4, cg5, cg6, cg7, cg8, cg9, cg10, cg11, cg12, cg13, cg14, cg15;
+        Frigider f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15;
 
         //lista cu produsele disponibile
         String[] vectorElectrocasnice = {"  1-Aragaz\n", "  2-Cuptor\n", "  3-Masina de spalat rufe\n", "  4-Masina de spalat vase\n", "  5-Frigider\n", "  6-Congelator\n"};
@@ -43,7 +43,7 @@ public class TestElectrocasnice {
         a13 = new Aragaz("Aragaz", "GORENJE", "GEC5A12WG-B", 4, "electric", "vitroceramica", "electric", "AquaClean", false, false, "	Interior SilverMatte, Forma HomeMade, Spatiu depozitare", 68, "A", 8000f, 220f, 1.638f, 35.6f, "50 x 59.4 x 85", "alb", 4.88f, 5, 12, 24);
         a14 = new Aragaz("Aragaz", "BEKO", "FSMT52320DXO", 4, "mixta (Gaz + Electric)", "gaz", "electric", "Fara autocuratare", true, true, "	8 functii de gatire", 55, "A", 2100f, 220f, 1.629f, 48.9f, "50 x 60 x 85", "inox", 4.74f, 50, 12, 24);
         a15 = new Aragaz("Aragaz", "BEKO", "FSM52330DAO", 4, "mixta (Gaz + Electric)", "gaz", "electric", "Fara autocuratare", false, true, "High efficiency gas burner, 3D Cooking, Cuptor multifunctional, Siguranta flacara la plita aragaz, Timer", 60, "A", 2100f, 220f, 1650f, 48f, "50 x 60 x 85", "antracit", 4.67f, 24, 12, 24);
-
+        
         c1 = new Cuptor("Cuptor incorporabil electric", "GORENJE", "BPS6737E14X", "pirolitica", 73, "A+", "amortizata", 13, "Forma HomeMade; Racire DC+; SuperSize; PizzaFunction; StepBake; GentleBake; FastPreheat; AirFry; FrozenBake; Gratin; SteamAssist", "IconLed", true, 3500f, 220f, 50f, 1.172f, 39.5f, "59.5 x 56.4 x 59.5", "alb", 5f, 3, 24, 24);
         c2 = new Cuptor("Cuptor incorporabil electric ", "BEKO ", "BBIS13300XMSE", "catalitica", 72, "A+", "amortizata", 9, "Iluminare interioara; Inchidere SoftClose; AEROperfect; Autocurataree SteamShine; Functii gatire: 3D Cooking; Pastrare la cald; Gatire conventionala; Grill; Dezghetare; Incalzire inferioara; Incalzire ventilata Eco; Incalzire ventilata", "LED Touch Control + Butoane", true, 0.0f, 220f, 50f, 1.098f, 31.3f, "59.4 x 56.7 x 59.5", "negru", 4.74f, 19, 12, 24);
         c3 = new Cuptor("Cuptor incorporabil cu gaz", "ELECTROLUX", "EOG2102AOX", "catalitica", 68, "A+", "standard", 7, "Inox antiamprente; curataree catalitica; Semnal sonor; Avertizare sfarsit de program; Cuptor cu rotisor; Incalzire jos; Dezghetare; Gril; Gril cu rotisor; Gatire usoara (light)", "mecanic", false, 1770f, 220f, 50f, 1.699f, 30.9f, "59.4 x 56.9 x 59.4", "inox", 4.68f, 72, 12, 24);
@@ -59,7 +59,7 @@ public class TestElectrocasnice {
         c13 = new Cuptor("Cuptor incorporabil electric", "CANDY ", "FCS100N/E", "Fara autocuratare", 70, "A", "Standard", 4, "Grill, Dezghetare rapida", "Mecanic", true, 1700f, 230f, 55f, 600f, 23f, "59.5 x 56.8 x 59.5", "negru", 4.58f, 19, 12, 24);
         c14 = new Cuptor("Cuptor incorporabil electric", "GORENJE", "BOS6737E13XE", "Hidrolitica", 77, "A+", "Amortizata", 13, "Forma HomeMade; Racire DC+; SuperSize; PizzaFunction; StepBake; GentleBake; FastPreheat; AirFry; FrozenBake; Gratin; SteamAssist", "IconLed", true, 3500f, 230f, 55f, 1.639f, 30f, "62 x 67.5 x 66", "inox", 5, 15, 12, 24);
         c15 = new Cuptor("Cuptor incorporabil electric", "BOSCH", "HBA5570B0", "EcoClean", 71, "A", "Standard", 7, "EcoClean Direct; CoolDoor; Sistem de protectie impotriva accesului copiilor; Indicator de caldura reziduala; Iluminare interioara cu halogen; Usa cu deschidere rabatabila; Suport telescopic cu amplasare independenta pe nivelul dorit; AutoPilot - 10 programe automate de gatire; Convectie aer 3D Plus; Incalzire superioara / inferioara; Grill cu convectie aer; Grill - suprafata mare; Pizza; Incalzire inferioara; Convectie - nivel delicat; Functie Stop", "LCD / Electronic", true, 3400f, 230f, 55f, 2.799f, 34.1f, "59.4 x 54.8 x 59.5", "negru", 4.64f, 14, 12, 24);
-
+        
         r1 = new MasinaDeSpalatRufe("Masina de spalat rufe frontala", "BOSCH", "WAN24167BY", "Child lock, Functie reincarcare, Night Wash, Reminder curatare tambur, Pornire intarziata, Control balans", 8, 1200, "C", 1793.92f, 67.6f, "59.8 x 55 x 84.8", "Alb", "LCD / Touch", 'A', 'B', 15, 15, "Bumbac, Sintetice, Delicate, Super 15'/30', Lana/Spalare manuala, Camasi/Bluze, Sport, Rapid/Mix, Dark wash, Hygiene Plus, Curatare tambur, Night Wash, Centrifugare+Evacuare", "Da", 62, 47, "3:26", 'A', 2300, 4.94f, 16, 12, 24);
         r2 = new MasinaDeSpalatRufe("Masina de spalat rufe frontala", "LG", "F4WV509S2TE", "Pornire intarziata (3-19 h), Child Lock, Doar centrifugare, Start/ Pauza, Alarma eroare, Auto Restart, Semnal sonor pornire/oprire", 9, 1400, "B", 2519.91f, 70, "60 x 56.5 x 85", "Argintiu", "LED/Touch control", 'A', 'B', 14, 59, "Bumbac, Eco 40-60, Mix (Mixed Fabric), Easy Care, Duvet, Tub Clean, Allergy Care, Baby Steam Care, Turbo Wash 59, Sports Wear, Rapid 14', Delicate, Hand / Wool", "Da", 58, 50, "3:48", 'A', 1850, 5, 2, 12, 24);
         r3 = new MasinaDeSpalatRufe("Masina de spalat rufe verticala", "INDESIT", "BTWB7220PEU/N", "Pornire intarziata, Reglare temperatura, Viteza centrifugare, Clatire Intensiva, Optiune energy saver, Calcare usoara", 7, 1200, "E", 1799.90f, 57, "40 x 60 x 90", "Alb", "Digital", 'A', 'C', 15, 15, "Turn & Go, Sintetice, Bumbac, Eco 40-60, Mix 45 min, Articole Sport, 20C, Lana 20, Delicate 30, Colorate 40, Bumbac 30, Sintetice 30, Centrifugare + Evacuare, Clatire + Centrifugare, Eco Bumbac", "Da", 78, 45, "03:25", 'C', 2100, 4.33f, 30, 12, 24);
@@ -102,17 +102,28 @@ public class TestElectrocasnice {
         cg8 = new Congelator("Static", 2, "Analog", 5, false, 43, "Beko", "Congelator sub tejghea", "A+", "FreezeZone ArcticWave 800", "Argintiu", "Sistem dezghetare - Automat; Preparare automata cuburi de gheata - Nu; Iluminare interior - Nu; Maner - Da", 220.0f, 50, 1400.0f, 4.8f, "70x90x160", 90.0f, 30, 24);
         cg9 = new Congelator("NoFrost", 2, "Digital", 3, true, 52, "Siemens", "Congelator cu usi franceze", "A", "CoolStream MegaFreeze 550", "Negru", "Sistem dezghetare - Manual; Preparare automata cuburi de gheata - Da; Iluminare interior - Da; Maner - Nu", 250.0f, 65, 1800.0f, 4.5f, "50x70x130", 70.0f, 36, 18);
         cg10 = new Congelator("Static", 1, "Analog", 4, true, 40, "Arctic", "Congelator cu usi multiple", "A++", "IceMaster ProChill 1200", "Alb", "Sistem dezghetare - Automat; Preparare automata cuburi de gheata - Da; Iluminare interior - Da; Maner - Nu", 200.0f, 40, 1300.0f, 4.0f, "65x85x140", 85.0f, 24, 12);
+        cg11 = new Congelator("NoFrost", 1, "Digital", 4, true, 42, "Whirlpool", "Congelator cu usa superioara", "A++", "FreezeTech ChillBlast 500", "Inox", "Sistem dezghetare - Automat; Preparare automata cuburi de gheata - Da; Iluminare interior - Da; Maner - Da", 210.0f, 55, 1600.0f, 4.2f, "60x80x150", 80.0f, 24, 12);
+        cg12 = new Congelator("Static", 2, "Analog", 5, false, 48, "LG", "Congelator sub tejghea", "A+", "ChillZone FrostGuard X6", "Negru", "Sistem dezghetare - Automat; Preparare automata cuburi de gheata - Nu; Iluminare interior - Nu; Maner - Da", 230.0f, 40, 1400.0f, 4.5f, "70x90x160", 90.0f, 30, 18);
+        cg13 = new Congelator("NoFrost", 3, "Digital", 4, true, 50, "Samsung", "Congelator cu usa inferioara", "A++", "FrostMaster ProIce 700", "Alb", "Sistem dezghetare - Automat; Preparare automata cuburi de gheata - Da; Iluminare interior - Nu; Maner - Nu", 220.0f, 45, 1500.0f, 4.0f, "75x95x170", 95.0f, 36, 24);
+        cg14 = new Congelator("Static", 1, "Analog", 3, false, 38, "Beko", "Congelator tip sertar", "A", "FreezeZone FrostBlast X4", "Argintiu", "Sistem dezghetare - Manual; Preparare automata cuburi de gheata - Nu; Iluminare interior - Da; Maner - Nu", 180.0f, 35, 1200.0f, 4.2f, "55x75x120", 75.0f, 18, 10);
+        cg15 = new Congelator("NoFrost", 2, "Digital", 5, true, 55, "Siemens", "Congelator cu usi franceze", "A+", "CoolStream MegaFreeze 800", "Inox", "Sistem dezghetare - Automat; Preparare automata cuburi de gheata - Da; Iluminare interior - Da; Maner - Da", 240.0f, 60, 1700.0f, 4.8f, "65x85x140", 85.0f, 24, 12);
 
-        f1 = new Frigider("NoFrost", 1, "Digital", 5, true, false, 40, "Samsung", "Frigider cu o singura usa", "A++", "EliteCool Pro X200", "Alb", "Dispenser apa - Da; Material rafturi - Plastic; Iluminare interior - Da, neon; Picioare - Da, ajustabile spate; Lungime cablu - 1.8m", 200.0f, 50, 1500.0f, 4.5f, "60x80x150", 80.0f, 24, 12);
-        f2 = new Frigider("Static", 2, "Digital", 4, false, false, 45, "LG", "Frigider cu doua usi", "A+", "FreshFrost Ultra 3000", "Negru", "Functie dezghetare rapida - Da; Material rafturi - Metal; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.6m", 250.0f, 30, 1200.0f, 4.0f, "70x90x160", 90.0f, 18, 10);
-        f3 = new Frigider("NoFrost", 2, "Digital", 3, true, true, 50, "Whirlpool", "Frigider cu doua usi", "A", "ArcticBreeze Elite Z", "Argintiu", "Sistem anti-amprenta - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, halogen; Picioare - Da, ajustabile spate; Lungime cablu - 1.9m", 180.0f, 40, 1300.0f, 4.2f, "50x70x130", 70.0f, 12, 6);
-        f4 = new Frigider("Static", 1, "Analog", 4, false, false, 42, "Bosch", "Frigider cu o singura usa", "A++", "CoolMaster Inox 500", "Alb", "Sertar legume/fructe - Da; Material rafturi - Plastic; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.7m", 220.0f, 60, 1700.0f, 4.8f, "65x85x140", 85.0f, 36, 24);
-        f5 = new Frigider("NoFrost", 2, "Digital", 5, true, true, 48, "Haier", "Frigider side-by-side", "A+", "IceTech Luxor 8000", "Rosu", "Functie economisire energie - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, LED; Picioare - Da, ajustabile spate; Lungime cablu - 1.5m", 240.0f, 45, 1400.0f, 4.5f, "75x95x170", 95.0f, 30, 18);
-        f6 = new Frigider("Static", 3, "Analog", 3, false, false, 55, "Electrolux", "Frigider cu doua usi", "A", "ChillWave Platinum Plus", "Negru", "Sistem de filtrare aer - Da; Material rafturi - Metal; Iluminare interior - Da, neon; Picioare - Da, ajustabile fata; Lungime cablu - 1.8m", 200.0f, 55, 1600.0f, 4.0f, "55x75x120", 75.0f, 24, 12);
-        f7 = new Frigider("NoFrost", 2, "Digital", 4, true, true, 38, "Beko", "Frigider cu doua usi", "A++", "FrostGuardian Supreme 700", "Alb", "Dozator apa si gheata - Da; Material rafturi - Plastic; Iluminare interior - Da, halogen; Picioare - Da, ajustabile spate; Lungime cablu - 1.7m", 180.0f, 35, 1200.0f, 4.2f, "60x80x150", 80.0f, 18, 10);
-        f8 = new Frigider("Static", 2, "Analog", 5, false, false, 43, "Hotpoint", "Frigider cu doua usi", "A+", "CrystalChill Diamond 900", "Argintiu", "Functie vacanta - Da; Material rafturi - Sticla; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.6m", 220.0f, 50, 1400.0f, 4.8f, "70x90x160", 90.0f, 30, 24);
-        f9 = new Frigider("NoFrost", 3, "Digital", 3, true, true, 52, "Siemens", "Frigider side-by-side", "A", "FreezeMax Innovate X", "Negru", "Sertar FreshZone - Da; Material rafturi - Plastic; Iluminare interior - Da, neon; Picioare - Da, ajustabile spate; Lungime cablu - 1.9m", 250.0f, 65, 1800.0f, 4.5f, "50x70x130", 70.0f, 36, 18);
-        f10 = new Frigider("Static", 1, "Analog", 4, false, false, 40, "Indesit", "Frigider cu o singura usa", "A++", "PolarCool Galaxy Z3", "Rosu", "Functie super-racire - Da; Material rafturi - Metal; Iluminare interior - Da, halogen; Picioare - Da, ajustabile fata; Lungime cablu - 1.8m", 200.0f, 40, 1300.0f, 4.0f, "65x85x140", 85.0f, 24, 12);
+        
+        f1 = new Frigider(true, "NoFrost", 1, "Digital", 5, true, false, 40, "Samsung", "Frigider cu o singura usa", "A++", "EliteCool Pro X200", "Alb", "Dispenser apa - Da; Material rafturi - Plastic; Iluminare interior - Da, neon; Picioare - Da, ajustabile spate; Lungime cablu - 1.8m", 200.0f, 50, 1500.0f, 4.5f, "60x80x150", 80.0f, 24, 12);
+        f2 = new Frigider(true, "Static", 2, "Digital", 4, false, false, 45, "LG", "Frigider cu doua usi", "A+", "FreshFrost Ultra 3000", "Negru", "Functie dezghetare rapida - Da; Material rafturi - Metal; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.6m", 250.0f, 30, 1200.0f, 4.0f, "70x90x160", 90.0f, 18, 10);
+        f3 = new Frigider(true, "NoFrost", 2, "Digital", 3, true, true, 50, "Whirlpool", "Frigider cu doua usi", "A", "ArcticBreeze Elite Z", "Argintiu", "Sistem anti-amprenta - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, halogen; Picioare - Da, ajustabile spate; Lungime cablu - 1.9m", 180.0f, 40, 1300.0f, 4.2f, "50x70x130", 70.0f, 12, 6);
+        f4 = new Frigider(true, "Static", 1, "Analog", 4, false, false, 42, "Bosch", "Frigider cu o singura usa", "A++", "CoolMaster Inox 500", "Alb", "Sertar legume/fructe - Da; Material rafturi - Plastic; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.7m", 220.0f, 60, 1700.0f, 4.8f, "65x85x140", 85.0f, 36, 24);
+        f5 = new Frigider(false, "NoFrost", 2, "Digital", 5, true, true, 48, "Haier", "Frigider side-by-side", "A+", "IceTech Luxor 8000", "Rosu", "Functie economisire energie - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, LED; Picioare - Da, ajustabile spate; Lungime cablu - 1.5m", 240.0f, 45, 1400.0f, 4.5f, "75x95x170", 95.0f, 30, 18);
+        f6 = new Frigider(false, "Static", 3, "Analog", 3, false, false, 55, "Electrolux", "Frigider cu doua usi", "A", "ChillWave Platinum Plus", "Negru", "Sistem de filtrare aer - Da; Material rafturi - Metal; Iluminare interior - Da, neon; Picioare - Da, ajustabile fata; Lungime cablu - 1.8m", 200.0f, 55, 1600.0f, 4.0f, "55x75x120", 75.0f, 24, 12);
+        f7 = new Frigider(true, "NoFrost", 2, "Digital", 4, true, true, 38, "Beko", "Frigider cu doua usi", "A++", "FrostGuardian Supreme 700", "Alb", "Dozator apa si gheata - Da; Material rafturi - Plastic; Iluminare interior - Da, halogen; Picioare - Da, ajustabile spate; Lungime cablu - 1.7m", 180.0f, 35, 1200.0f, 4.2f, "60x80x150", 80.0f, 18, 10);
+        f8 = new Frigider(true, "Static", 2, "Analog", 5, false, false, 43, "Hotpoint", "Frigider cu doua usi", "A+", "CrystalChill Diamond 900", "Argintiu", "Functie vacanta - Da; Material rafturi - Sticla; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.6m", 220.0f, 50, 1400.0f, 4.8f, "70x90x160", 90.0f, 30, 24);
+        f9 = new Frigider(true, "NoFrost", 3, "Digital", 3, true, true, 52, "Siemens", "Frigider side-by-side", "A", "FreezeMax Innovate X", "Negru", "Sertar FreshZone - Da; Material rafturi - Plastic; Iluminare interior - Da, neon; Picioare - Da, ajustabile spate; Lungime cablu - 1.9m", 250.0f, 65, 1800.0f, 4.5f, "50x70x130", 70.0f, 36, 18);
+        f10 = new Frigider(false, "Static", 1, "Analog", 4, false, false, 40, "Indesit", "Frigider cu o singura usa", "A++", "PolarCool Galaxy Z3", "Rosu", "Functie super-racire - Da; Material rafturi - Metal; Iluminare interior - Da, halogen; Picioare - Da, ajustabile fata; Lungime cablu - 1.8m", 200.0f, 40, 1300.0f, 4.0f, "65x85x140", 85.0f, 24, 12);
+        f11 = new Frigider(true, "NoFrost", 2, "Digital", 4, true, false, 42, "Sony", "Cu doua usi", "A++", "SmartFreeze X3000", "Inox", "Dispenser apa - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, LED; Picioare - Da, ajustabile spate; Lungime cablu - 1.8m", 230.0f, 53, 1550.0f, 4.3f, "68x88x158", 88.0f, 28, 15);
+        f12 = new Frigider(false, "Static", 1, "Analog", 3, false, false, 40, "Panasonic", "Cu o singura usa", "A+", "CoolBreeze Z200", "Alb", "Functie dezghetare automata - Da; Material rafturi - Plastic; Iluminare interior - Da, neon; Picioare - Da, ajustabile fata; Lungime cablu - 1.7m", 190.0f, 38, 1250.0f, 4.0f, "62x78x142", 78.0f, 20, 12);
+        f13 = new Frigider(true, "NoFrost", 3, "Digital", 5, true, true, 48, "Sony", "Cu doua usi", "A++", "IceMaster Z800", "Negru", "Sistem anti-amprenta - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, LED; Picioare - Da, ajustabile spate; Lungime cablu - 1.9m", 260.0f, 48, 1450.0f, 4.5f, "70x90x160", 90.0f, 32, 18);
+        f14 = new Frigider(false, "Static", 2, "Analog", 4, false, true, 40, "Panasonic", "Cu doua usi", "A++", "FreshCool Z400", "Alb", "Functie economisire energie - Da; Material rafturi - Metal; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.6m", 210.0f, 42, 1350.0f, 4.2f, "68x88x158", 88.0f, 24, 15);
+        f15 = new Frigider(true, "NoFrost", 1, "Digital", 3, true, false, 44, "LG", "Cu o singura usa", "A", "FreezeGuard X200", "Argintiu", "Sertar legume/fructe - Da; Material rafturi - Plastic; Iluminare interior - Da, halogen; Picioare - Da, ajustabile spate; Lungime cablu - 1.7m", 220.0f, 52, 1600.0f, 4.2f, "55x75x130", 75.0f, 22, 10);
 
         //folosim constructorul de copiere ca sa fie acolo, sa vada ca merge; comentarile le stergem cand prezentam proiectul nu? eu zic sa da
         a0 = new Aragaz(a1);
@@ -130,17 +141,15 @@ public class TestElectrocasnice {
 //        System.out.println("\nCopie v12\n"+v0);
 //        System.out.println("\nCopie cg3\n"+cg0);
 //        System.out.println("\nCopie f4\n"+f0);
-
-
         //facem un vector "vectAragaze" in care o sa punem instantele
         // dupa facem un vector aragazeArray cu toate instantele ca sa pot face un for; altfel ar fi trebuit sa fac vectAragaze[0]=a1; vectAragaze[1]=a2;... de 10 ori!!!!!! 
-        Aragaz[] vectAragaze = new Aragaz[15];
-        Aragaz[] aragazeArray = {a1, a2, a3, a4, a5, a6, a7, a8, a9, a10,a11, a12, a13, a14, a15};
+        Aragaz[] vectAragaze = new Aragaz[10];
+        Aragaz[] aragazeArray = {a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15};
         for (int i1 = 0; i1 < vectAragaze.length && i1 < aragazeArray.length; i1++) {
             vectAragaze[i1] = aragazeArray[i1];
         }
 
-        Cuptor[] vectCuptoare = new Cuptor[15];
+        Cuptor[] vectCuptoare = new Cuptor[10];
         Cuptor[] cuptoareArray = {c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15};
         for (int i2 = 0; i2 < vectCuptoare.length && i2 < cuptoareArray.length; i2++) {
             vectCuptoare[i2] = cuptoareArray[i2];
@@ -157,13 +166,13 @@ public class TestElectrocasnice {
             vectMasinaDeSpalatVase[i4] = MasinaDeSpalatVase2Array[i4];
         }
         Congelator[] vectCongelatoare = new Congelator[10];
-        Congelator[] congelatoareArray = {cg1, cg2, cg3, cg4, cg5, cg6, cg7, cg8, cg9, cg10};
+        Congelator[] congelatoareArray = {cg1, cg2, cg3, cg4, cg5, cg6, cg7, cg8, cg9, cg10, cg11, cg12, cg13, cg14, cg15};
         for (int i5 = 0; i5 < vectCongelatoare.length && i5 < congelatoareArray.length; i5++) {
             vectCongelatoare[i5] = congelatoareArray[i5];
         }
 
         Frigider[] vectFrigidere = new Frigider[10];
-        Frigider[] frigidereArray = {f1, f2, f3, f4, f5, f6, f7, f8, f9, f10};
+        Frigider[] frigidereArray = {f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15};
         for (int i6 = 0; i6 < vectFrigidere.length && i6 < frigidereArray.length; i6++) {
             vectFrigidere[i6] = frigidereArray[i6];
         }
