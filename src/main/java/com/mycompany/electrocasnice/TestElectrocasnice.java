@@ -1,6 +1,5 @@
-package electrocasnice;
+package com.mycompany.electrocasnice;
 
-//import java.lang.String;
 import java.util.Scanner;
 public class TestElectrocasnice {
 
@@ -119,11 +118,11 @@ public class TestElectrocasnice {
         f8 = new Frigider(true, "Static", 2, "Analog", 5, false, false, 43, "Hotpoint", "Frigider cu doua usi", "A+", "CrystalChill Diamond 900", "Argintiu", "Functie vacanta - Da; Material rafturi - Sticla; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.6m", 220.0f, 50, 1400.0f, 4.8f, "70x90x160", 90.0f, 30, 24);
         f9 = new Frigider(true, "NoFrost", 3, "Digital", 3, true, true, 52, "Siemens", "Frigider side-by-side", "A", "FreezeMax Innovate X", "Negru", "Sertar FreshZone - Da; Material rafturi - Plastic; Iluminare interior - Da, neon; Picioare - Da, ajustabile spate; Lungime cablu - 1.9m", 250.0f, 65, 1800.0f, 4.5f, "50x70x130", 70.0f, 36, 18);
         f10 = new Frigider(false, "Static", 1, "Analog", 4, false, false, 40, "Indesit", "Frigider cu o singura usa", "A++", "PolarCool Galaxy Z3", "Rosu", "Functie super-racire - Da; Material rafturi - Metal; Iluminare interior - Da, halogen; Picioare - Da, ajustabile fata; Lungime cablu - 1.8m", 200.0f, 40, 1300.0f, 4.0f, "65x85x140", 85.0f, 24, 12);
-        f11 = new Frigider(true, "NoFrost", 2, "Digital", 4, true, false, 42, "Sony", "Cu doua usi", "A++", "SmartFreeze X3000", "Inox", "Dispenser apa - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, LED; Picioare - Da, ajustabile spate; Lungime cablu - 1.8m", 230.0f, 53, 1550.0f, 4.3f, "68x88x158", 88.0f, 28, 15);
-        f12 = new Frigider(false, "Static", 1, "Analog", 3, false, false, 40, "Panasonic", "Cu o singura usa", "A+", "CoolBreeze Z200", "Alb", "Functie dezghetare automata - Da; Material rafturi - Plastic; Iluminare interior - Da, neon; Picioare - Da, ajustabile fata; Lungime cablu - 1.7m", 190.0f, 38, 1250.0f, 4.0f, "62x78x142", 78.0f, 20, 12);
-        f13 = new Frigider(true, "NoFrost", 3, "Digital", 5, true, true, 48, "Sony", "Cu doua usi", "A++", "IceMaster Z800", "Negru", "Sistem anti-amprenta - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, LED; Picioare - Da, ajustabile spate; Lungime cablu - 1.9m", 260.0f, 48, 1450.0f, 4.5f, "70x90x160", 90.0f, 32, 18);
-        f14 = new Frigider(false, "Static", 2, "Analog", 4, false, true, 40, "Panasonic", "Cu doua usi", "A++", "FreshCool Z400", "Alb", "Functie economisire energie - Da; Material rafturi - Metal; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.6m", 210.0f, 42, 1350.0f, 4.2f, "68x88x158", 88.0f, 24, 15);
-        f15 = new Frigider(true, "NoFrost", 1, "Digital", 3, true, false, 44, "LG", "Cu o singura usa", "A", "FreezeGuard X200", "Argintiu", "Sertar legume/fructe - Da; Material rafturi - Plastic; Iluminare interior - Da, halogen; Picioare - Da, ajustabile spate; Lungime cablu - 1.7m", 220.0f, 52, 1600.0f, 4.2f, "55x75x130", 75.0f, 22, 10);
+        f11 = new Frigider(true, "NoFrost", 2, "Digital", 4, true, false, 42, "Sony", "Frigider cu doua usi", "A++", "SmartFreeze X3000", "Inox", "Dispenser apa - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, LED; Picioare - Da, ajustabile spate; Lungime cablu - 1.8m", 230.0f, 53, 1550.0f, 4.3f, "68x88x158", 88.0f, 28, 15);
+        f12 = new Frigider(false, "Static", 1, "Analog", 3, false, false, 40, "Panasonic", "Frigider cu o singura usa", "A+", "CoolBreeze Z200", "Alb", "Functie dezghetare automata - Da; Material rafturi - Plastic; Iluminare interior - Da, neon; Picioare - Da, ajustabile fata; Lungime cablu - 1.7m", 190.0f, 38, 1250.0f, 4.0f, "62x78x142", 78.0f, 20, 12);
+        f13 = new Frigider(true, "NoFrost", 3, "Digital", 5, true, true, 48, "Sony", "Frigider cu doua usi", "A++", "IceMaster Z800", "Negru", "Sistem anti-amprenta - Da; Material rafturi - Sticla securizata; Iluminare interior - Da, LED; Picioare - Da, ajustabile spate; Lungime cablu - 1.9m", 260.0f, 48, 1450.0f, 4.5f, "70x90x160", 90.0f, 32, 18);
+        f14 = new Frigider(false, "Static", 2, "Analog", 4, false, true, 40, "Panasonic", "Frigider cu doua usi", "A++", "FreshCool Z400", "Alb", "Functie economisire energie - Da; Material rafturi - Metal; Iluminare interior - Da, LED; Picioare - Da, ajustabile fata; Lungime cablu - 1.6m", 210.0f, 42, 1350.0f, 4.2f, "68x88x158", 88.0f, 24, 15);
+        f15 = new Frigider(true, "NoFrost", 1, "Digital", 3, true, false, 44, "LG", "Frigider cu o singura usa", "A", "FreezeGuard X200", "Argintiu", "Sertar legume/fructe - Da; Material rafturi - Plastic; Iluminare interior - Da, halogen; Picioare - Da, ajustabile spate; Lungime cablu - 1.7m", 220.0f, 52, 1600.0f, 4.2f, "55x75x130", 75.0f, 22, 10);
 
         //folosim constructorul de copiere ca sa fie acolo, sa vada ca merge; comentarile le stergem cand prezentam proiectul nu? eu zic sa da
         a0 = new Aragaz(a1);
@@ -246,3 +245,4 @@ public class TestElectrocasnice {
         }
     }
 }
+
