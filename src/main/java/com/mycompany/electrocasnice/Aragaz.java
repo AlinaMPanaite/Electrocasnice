@@ -5,7 +5,6 @@ package com.mycompany.electrocasnice;
  * @author Alina
  */
 public class Aragaz extends Electrocasnice {
-//Variabile de instanta=date membre=câmpuri ale clasei
 
     int numar_arzatoare;
     String tipAlimentare;
@@ -30,9 +29,8 @@ public class Aragaz extends Electrocasnice {
 
     }
 
-    Aragaz(String tip, String brand, String numeModel, int numar_arzatoare, String tipAlimentare, String tipPlita, String tipCuptor, String Autocuratare, boolean rotisor, boolean grill, String Functii, float capacitate, String ClasaEficientaEnergetica, float putere, float tensiune, float pret, float greutate, String dimensiune, String culoare, float recenzie, int recenziitotal, int GarantiePersoaneJuridice, int GarantiePersoaneFizice) {
-// super = apel către constructorul clasei părinte (constructorul superclasei)    
-        super(tip, brand, numeModel, Functii, capacitate, ClasaEficientaEnergetica, pret, greutate, dimensiune, culoare, recenzie, recenziitotal, GarantiePersoaneJuridice, GarantiePersoaneFizice);
+    Aragaz(String tip, String brand, String numeModel, int numar_arzatoare, String tipAlimentare, String tipPlita, String tipCuptor, String Autocuratare, boolean rotisor, boolean grill, String functii, float capacitate, String clasaEficientaEnergetica, float putere, float tensiune, float pret, float greutate, String dimensiune, String culoare, float recenzii, int recenziiTotal, int garantiePersoaneJuridice, int garantiePersoaneFizice) {
+        super(tip, brand, numeModel, functii, capacitate, clasaEficientaEnergetica, pret, greutate, dimensiune, culoare, recenzii, recenziiTotal, garantiePersoaneJuridice, garantiePersoaneFizice);
         this.numar_arzatoare = numar_arzatoare;
         this.tipAlimentare = tipAlimentare;
         this.rotisor = rotisor;
@@ -46,7 +44,6 @@ public class Aragaz extends Electrocasnice {
     }
 
     public Aragaz(Aragaz copie) {
-        // Constructorul de copiere
         super(copie);
         this.numar_arzatoare = copie.numar_arzatoare;
         this.tipAlimentare = copie.tipAlimentare;
